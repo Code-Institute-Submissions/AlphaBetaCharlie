@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', "No Secret key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["79b91c06532741a386dcb141e0aecdff.vfs.cloud9.us-east-1.amazonaws.com", "jmc-django-ecommerce.herokuapp.com", 'localhost', '8000-b700bef5-4e4d-4f49-86f6-78800e9dc5c4.ws-ap0.gitpod.io']
+ALLOWED_HOSTS = ["79b91c06532741a386dcb141e0aecdff.vfs.cloud9.us-east-1.amazonaws.com", "alpha-beta-charlie.herokuapp.com", 'localhost', '8000-b700bef5-4e4d-4f49-86f6-78800e9dc5c4.ws-ap0.gitpod.io']
 # [os.environ.get('C9_HOSTNAME')]
 
 # Application definition
