@@ -1,8 +1,53 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>This is your profile page.</h2>
-    <p>You are logged in as Alpha_{{ user.username }} </p>
-    <p>Your registered email address is {{ user.email }} </p>
-    <p>You membership born on date was 09/07/2019 </p>
-    <p>Your Alpha has spawned 3 Beta Charlie sets since its inception</p>
+    <h2>Welcome to your profile page</h2>
+    <p>Username : {{ user.username }} </p>
+    <p>Membership Date :  {{ user.date_joined }} </p>
+    {% comment %} <p>You membership born on date was 09/07/2019 </p>
+    <p>Your Alpha has spawned 3 Beta Charlie sets since its inception</p> {% endcomment %}
+
+    <div class="row row-flex">
+    {% for product in alpha_list %}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+
+                <h3>{{ product.name }}</h3>
+                {% comment %} <p class="product-description">{{ product.description }}</p> {% endcomment %}
+                {% if product.children|length > 0 %}
+                {% for child in product.children %}
+                 <p>
+                 {{child.type.base.name | title}}:
+                 {% if child.consumed_by %}
+                 Consumed
+                 {% else %}
+                 Spawned
+                 {% endif %}
+                 </p>
+                 {% endfor %}
+                 {% else %}
+                 <p>Beta : Unavailable</p>
+                 <p>Charlie : Unavailable</p>
+                 {% endif %}
+                <p>${{ product.price }}</p>
+
+                <form method="post" action="{% url 'add_subscription_to_cart' product.id %}">
+                    {% csrf_token %}
+                    <div class="input-group">
+
+                        <span class="input-group-btn">
+                        {% if product.status == "available" %}
+                            <button class="btn btn-success" type="submit">Consume</button>
+                        {% elif product.status == "incart" %}
+                            <button class="btn btn-success" type="submit" disabled>Added to Cart</button>
+                        {% else %}
+                            <button class="btn btn-success" type="submit" disabled>Consumed</button>
+                        {% endif %}
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
 {% endblock %}

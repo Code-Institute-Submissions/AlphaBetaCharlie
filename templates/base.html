@@ -31,9 +31,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'home' %}"><i class="fa fa-user"></i>Home</a></li>
+                        <li><a href="{% url 'products' %}"><i class="fa fa-user"></i>Products</a></li>
                         <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a></li>
                         <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Log Out</a></li>
                     {%  else %}
+                        <li><a href="{% url 'home' %}"><i class="fa fa-user"></i>Home</a></li>
+                        <li><a href="{% url 'products' %}"><i class="fa fa-user"></i>Products</a></li>
                         <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i>Register</a></li>
                         <li><a href="{% url 'login' %}"><i class="fa fa-signin"></i>Log In</a></li>
                     {% endif %}
@@ -62,14 +65,14 @@
         <div class="display">
            <form action="{% url 'search' %}" method="get">
                <input type="text" name="q">
-               <button type="search">Search</button> 
-           </form> 
+               <button type="search">Search</button>
+           </form>
         </div>
         {% block content %} {% endblock %}
     </div>
     <footer>
         <div class="container">
-            <p>Made by Code Institute Bootcampers and John McClain for his kids Kalie, Shaun, Nick, Molly, Jack, Tim, Jolie and Kerry</p>
+            <p>Made by Code Institute Bootcampers and John McClain for his lovely wife Theresa and awesome kids Kalie, Shaun, Nick, Molly, Jack, Tim, Jolie and Kerry</p>
         </div>
     </footer>
 </body>
