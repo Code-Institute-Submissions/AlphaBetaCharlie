@@ -15,7 +15,7 @@ def all_products(request):
         # all products but not alpha & not created by the user & status = available
         products = Product.objects.exclude(type__base__name="alpha").exclude(created_by=request.user.id).filter(status='available')
 
-# for future use to hold items in cart while restricting others from entering same items to cart
+# for future use to hold items in cart while restricting others from entering same items to cart. Line 27 below needs to be uncommented as well
 # select_for_update(Sof=('self',), skip_locked=True).
         #if user has consumed an alpha
         if len(alpha_products)>0:

@@ -52,7 +52,9 @@
 </div>
 
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <legend>Payment Details</legend>
+    <legend>Payment Details
+    <p>For testing purposes only use card number 4242424242424242 and cvv 111 make sure date is in the future</p>
+    </legend>
 
     <div id="credit-card-errors" style="display: none;">
         <div id="alert-message block-message error" id="stripe-error-message"></div>
