@@ -13,8 +13,10 @@ def all_products(request):
         # getting all alpha products consumed by the user, used to retrive same value B and C
         alpha_products = Product.objects.filter(type__base__name='alpha', consumed_by=request.user.id)
         # all products but not alpha & not created by the user & status = available
-        products = Product.objects.select_for_update(of=('self',), skip_locked=True).exclude(type__base__name="alpha").exclude(created_by=request.user.id).filter(status='available')
+        products = Product.objects.exclude(type__base__name="alpha").exclude(created_by=request.user.id).filter(status='available')
 
+# for future use to hold items in cart while restricting others from entering same items to cart
+# select_for_update(Sof=('self',), skip_locked=True).
         #if user has consumed an alpha
         if len(alpha_products)>0:
             #for each alpha subscribed by the user, get one B and one C of the same value, sorted by created_at, add it to final_products
