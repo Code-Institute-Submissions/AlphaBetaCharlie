@@ -50,7 +50,7 @@ class ProductManager(models.Manager):
         type = ProductType.objects.get(pk=product.id)
         consumed_by = get_user_model().objects.get(pk=consumed_by_id)
         alpha_new = self.create(type=type, status='consumed', consumed_by=consumed_by)
-        # do something with the book
+        # creates new user initiated alpha
         return alpha_new
 
     def create_all_available_children(self, parent, created_by_id):
@@ -74,9 +74,9 @@ class ProductManager(models.Manager):
 class Product(models.Model):
 
     PRODUCT_STATUS = (
-        ('available', 'Available'),
-        ('held', 'Held'),
-        ('consumed', 'Consumed'),
+        ('available', 'Available'), #items in view available to be consumed
+        ('held', 'Held'), #for future iteration designed to prevent same items from entering multiple carts at same time
+        ('consumed', 'Consumed'), #consumed items that have spawned children
     )
 
     type = models.ForeignKey('ProductType', blank=True, on_delete=models.DO_NOTHING, null=True)
