@@ -8,7 +8,7 @@
     {% for product in products %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
             <div class="panel-body">
-                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.type.image }}')"></div>
+                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.type.image_available }}')"></div>
 
                 <h3>{{ product.type.base.name | title}}_{{product.created_by | title}}</h3>
                 <p class="product-description">Spawned on: {{ product.created_at }}</p>
