@@ -60,7 +60,7 @@ def check_product_in_cart(cart, id):
 
 #sets cart presence of a product based on whether it is present in cart, used to set the button to disabled and added to cart
 def set_cart_presence(cart, product):
-    if check_product_in_cart(cart,product.id):
+    if check_product_in_cart(cart, product.id):
         product.cart_presence=True
     else:
         product.cart_presence=False
