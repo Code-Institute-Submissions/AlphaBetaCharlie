@@ -4,5 +4,5 @@ from products.models import Product, ProductBase, ProductType
 # Create your views here.
 
 def do_search(request):
-    products = Product.objects.filter(ProductType__icontains=request.GET['q'])
+    products = Product.objects.filter(consumed_by__icontains=request.GET['q'])
     return render(request, "products_user.html", {"products":products})
