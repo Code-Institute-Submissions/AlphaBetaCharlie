@@ -11,6 +11,7 @@
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.type.image_available }}')"></div>
 
                 <h3>{{ product.type.base.name | title}}_{{product.created_by | title}}</h3>
+                <h3>Offered by: {{product.created_by | title}}</h3>
                 <p class="product-description">Spawned on: {{ product.created_at }}</p>
                 <p>${{ product.type.price }}</p>
 
