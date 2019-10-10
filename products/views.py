@@ -4,7 +4,9 @@ from django.utils import timezone
 from django.http import HttpResponseRedirect
 from django.utils.timezone import now
 from django.contrib import messages
+
 # Create your views here.
+
 def all_products(request):
 
     final_products = Product.objects.none()
