@@ -5,4 +5,4 @@ from products.models import Product, ProductBase, ProductType
 
 def do_search(request):
     products = ProductBase.objects.filter(name__icontains=request.GET['q'])
-    return render(request, "products_all.html", "products_user.html" {"products":products})
+    return render(request, "products_user.html" {"products_user":products_user})
