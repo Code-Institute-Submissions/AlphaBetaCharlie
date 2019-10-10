@@ -13,7 +13,7 @@ def all_products(request):
         # getting all alpha products consumed by the user, used to retrieve same value B and C
         alpha_products = Product.objects.filter(type__base__name='alpha', consumed_by=request.user.id)
         # all products but not alpha & not created by the user & status = available
-        products = Product.objects.exclude(type__base__name="alpha")#.exclude(created_by=request.user.id).filter(status='available')
+        products = Product.objects.exclude(type__base__name="alpha").exclude(created_by=request.user.id).filter(status='available')
 
 # for future use to hold items in cart while restricting others from entering same items to cart. Line 27 below needs to be uncommented as well
 # select_for_update(Sof=('self',), skip_locked=True).
@@ -32,7 +32,7 @@ def all_products(request):
                 set_cart_presence(cart,p)
             return render(request, "products_user.html", {"products": final_products})
 
-        #if user has not consumed alpha, take him to generic products page when he will be redirected to buy alphas when he tries to buy B and C
+        #if user has not consumed alpha when they try to buy B and or C, redirect them to their profile page so they can consume they Alpha to initiate B ad C spawnings in that denomination
         else:
             products = Product.objects.exclude(type__base__name='alpha')
             return render(request, "products_all.html", {"products": products})
