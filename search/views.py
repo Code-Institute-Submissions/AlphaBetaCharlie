@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from products.models import Product, ProductBase
+from products.models import Product, ProductBase, ProductType
 
 # Create your views here.
 
 def do_search(request):
     products = ProductBase.objects.filter(name__icontains=request.GET['q'])
-    return render(request, "products.html", {"products":products})
+    return render(request, "products_all.html", "products_user.html" {"products":products})
