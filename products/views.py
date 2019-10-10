@@ -22,7 +22,7 @@ def all_products(request):
             #for each alpha subscribed by the user, get one B and one C of the same value, sorted by created_at, add it to final_products
             for alpha in alpha_products:
                 for base in get_all_productbases():
-                    base_products = products.filter(type__price=alpha.type.price).filter(type__base__id=base.id).order_by('created_at')[0:1]
+                    base_products = products.filter(type__price=alpha.type.price).filter(type__base__id=base.id).order_by('created_at')#[0:1]
                     final_products = final_products | base_products
                     # Product.objects.filter(pk__in=base_products).update(status='held', updated_at=timezone.now())
 
