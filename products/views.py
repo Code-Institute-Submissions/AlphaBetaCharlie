@@ -13,7 +13,7 @@ def all_products(request):
         # getting all alpha products consumed by the user, used to retrieve same value B and C
         alpha_products = Product.objects.filter(type__base__name='alpha', consumed_by=request.user.id)
         # all products but not alpha & not created by the user & status = available
-        products = Product.objects.exclude(type__base__name="alpha").exclude(created_by=request.user.id).filter(status='available')
+        products = Product.objects.exclude(type__base__name="alpha")#.exclude(created_by=request.user.id).filter(status='available')
 
 # for future use to hold items in cart while restricting others from entering same items to cart. Line 27 below needs to be uncommented as well
 # select_for_update(Sof=('self',), skip_locked=True).
