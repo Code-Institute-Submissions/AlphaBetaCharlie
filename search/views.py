@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from products.models import Product
-from .models import ProductBase
+from products.models import Product ProductBase
 
 # Create your views here.
 
