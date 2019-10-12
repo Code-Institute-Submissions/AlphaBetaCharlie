@@ -15,6 +15,10 @@ def home(request):
     """A view that displays the home page"""
     return render(request, "home.html")
 
+def how-to(request):
+    """A view that displays the how=to page"""
+    return render(request, "how-to.html")
+
 def logout(request):
     """A view that logs the user out and redirects back to the index page"""
     auth.logout(request)
