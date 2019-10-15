@@ -3,9 +3,9 @@
     <h2>Welcome to your profile page</h2>
     <p>Username : {{ user.username }} </p>
     <p>Membership Date :  {{ user.date_joined }} </p>
-    <p>Spent: $</p>
+    {% comment %} <p>Spent: $</p>
     <p>Earned: $</p>
-    <p>Profit: $</p>
+    <p>Profit: $</p> {% end comment %}
     <div class="row row-flex">
     {% for product in alpha_list %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
