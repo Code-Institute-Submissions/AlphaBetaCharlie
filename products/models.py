@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.timezone import now
 from django.contrib.auth import get_user_model
+from django.db.models import Sum
 # Create your models here.
 
 
@@ -69,6 +70,23 @@ class ProductManager(models.Manager):
         product.consumed_by = consumed_by
         product.save()
         return product
+
+    def get_user_transaction_summary(self, user_id):
+        #fetch all children available for that particular value, except alphas. eg. for 1$ get all children = 1$ alpha, 1$ beta, 1$ charlie. now exclude alpha
+        user = get_user_model().objects.get(pk=user_id)
+        
+        invested = Product.objects.filter(consumed_by=user).filter(status='consumed').aggregate(Sum('type__price'))['type__price__sum']
+        earned =  Product.objects.filter(created_by=user).filter(status='consumed').aggregate(Sum('type__price'))['type__price__sum']
+        outstanding = Product.objects.filter(created_by=user).exclude(status='consumed').aggregate(Sum('type__price'))['type__price__sum']
+        
+        if invested == None:
+            invested = 0
+        if earned == None:
+            earned = 0
+        if outstanding == None:
+            outstanding = 0
+            
+        return {'transaction_invested': invested, 'transaction_earned': earned, 'transaction_outstanding': outstanding}
 
 
 class Product(models.Model):

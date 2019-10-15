@@ -68,6 +68,10 @@ def profile(request):
             incart_alpha_price_list.append(cart_item['product'].price)
 
     alpha_types_list = ProductType.objects.filter(base__name='alpha')
+
+    beta_products_all = Product.objects.filter(type__base__name='beta')
+    charlie_products_all = Product.objects.filter(type__base__name='charlie')
+
     for alpha in alpha_types_list:
         if(alpha.price in consumed_alpha_price_list):
             alpha.status='consumed'
@@ -75,9 +79,17 @@ def profile(request):
             alpha.children = Product.objects.filter(parent=consumed_alpha_list[consumed_alpha_price_list.index(alpha.price)].id)
         elif (alpha.price in incart_alpha_price_list):
             alpha.status='incart'
+            alpha.beta_spawned = beta_products_all.filter(type__price=alpha.price).count()
+            alpha.beta_consumed = beta_products_all.filter(type__price=alpha.price).filter(status='consumed').count()
+            alpha.charlie_spawned = charlie_products_all.filter(type__price=alpha.price).count()
+            alpha.charlie_consumed = charlie_products_all.filter(type__price=alpha.price).filter(status='consumed').count()
             alpha.image = alpha.image_available
         else:
             alpha.status='available'
+            alpha.beta_spawned = beta_products_all.filter(type__price=alpha.price).count()
+            alpha.beta_consumed = beta_products_all.filter(type__price=alpha.price).filter(status='consumed').count()
+            alpha.charlie_spawned = charlie_products_all.filter(type__price=alpha.price).count()
+            alpha.charlie_consumed = charlie_products_all.filter(type__price=alpha.price).filter(status='consumed').count()
             alpha.image = alpha.image_available
     print("HERE now rendering")
     print(request)
