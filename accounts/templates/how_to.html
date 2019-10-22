@@ -4,31 +4,11 @@
 
 <h3>Welcome to the Alpha Beta Charlie Society</h3>
 
-
-<div>img src= {% "static\images\alpha-image.png" %}</div>
-<div>img src= {% "static/images/alpha-image.png" %}</div>
-<div>img src= {% "\static\images\alpha-image.png" %}</div>
-<div>img src= {% "/static/images/alpha-image.png" %}</div>
-<img src="{% /media/AlphaBetaCharlie-1/Hi-I-am-Alpha.png" %}>
-
-
-
-<img src="{% /media/Hi-I-am-Alpha.png" %}>
-<img src="{% \AlphaBetaCharlie-1\media\and-I-am-Beta.png" %}>
-<img src="{% /AlphaBetaCharlie-1/media/and-I-am-Beta.png" %}>
-<img src="{% AlphaBetaCharlie-1/media/and-I-am-Beta.png" %}>
-<img src="{% /media/project_name/photo.png" %}>
-
-<img src="{% static 'images/alpha-image.png' %}">
-
-<img src= "{% static/images/alpha-image.png" %}>
-<img src= "{% \static\images\alpha-image.png" %}>
-<img src= "{% /static/images/alpha-image.png" %}>
-
-
-
 <p>If you wish to earn income through the site you need to initiate your Alpha, You can do so by clicking the Initiate Alpha button below. This will send you to the checkout form where you'll need to complete the transaction by depositing $1 into the system ALpha Bank. This will pay for you lifetime membership and spawn your first Beta and Alpha friends.</p>
 <br>
 <button type="submit" class="btn btn-primary">Initiate Alpha</button>
+
+<img src="{% static 'images/alpha-image.png' %}">
+<img src="{{MEDIA_URL}}/and-I-am-Beta.png">
 
 {% endblock %}
