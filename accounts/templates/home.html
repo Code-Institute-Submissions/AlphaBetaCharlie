@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
-<h3>Introducing the Alpha Beta Charlie Society.</h3>
-<p>We enthusiastically encourage and welcome one and all to become a member of our society.</p>
+
+<h3>Welcome to Fundgrazing</h3>
+<h3>About Us</h3>
+
+<p>Our platform is a money raising solution. It was designed so that anyone who wanted to make money online regardless of whether or not they had access to items they could sell could do so. If you want to make money selling items online but do not want to hassle with sourcing inventory or shipping items then you have come to the right place.</p>
 
 <h3>Mission Statement</h3>
-<p>Our mission is to provide financial freedom to each and every one of our members. We endeavour to ensure an inclusive society and have gone to great lengths to provide an environment where all members have the same opportunities to improve their financial well being. We wish every member a successful and fulfilling journey through life and understand that the pursuit of happiness often revolves around the luxuries financial freedom has to offer. It is this belief that has emboldened us to create the society. We sincerely hope our efforts improve your lifestyle.
+<p>Our mission is to provide financial freedom to each and every one of our members. We endeavour to ensure an inclusive marketplace and have gone to great lengths to provide an environment where all members have the same opportunities to improve their financial well being. We wish every member a successful and fulfilling journey through life and understand that the pursuit of happiness often revolves around the luxuries financial freedom has to offer. It is this belief that has emboldened us to create this service. We sincerely hope our efforts improve your lifestyle.
 
 <h3>Modus Operandi</h3>
-<p>To achieve our mission we have designed a gamification engine our members use to build their wealth.</p>
-<p>The game is predicated on three characters affectionately known as Alpha, Beta and Charlie. These characters are simply transactions in our gaming engine. Your job is to generate as many transactions as you can because each one generates income for you.</p>
+<p>To achieve our mission we have designed the first ever eCommerce based crowd funding solution which enables our members to raise capital without the need to state the use of the funds or to produce a plea for the funds. Our solution is designed as a marketplace that allows users to trade in transactions resulting in revenue. The more transactions a seller trades in the wealthier that seller becomes. This model is no different than any other online marketplace or regular brick and mortar store.</p>
+<p>The marketplace only sells three items affectionately known as Alpha, Beta and Charlie. Alpha is your supplier while Beta and Charlie are your inventory, it's that easy.</p>
 
 <h3>How it works</h3>
 
@@ -18,20 +21,29 @@
 In a traditional online store, you have to deal with tedious tasks such as adding inventory and fulfilling orders. You have to deal with suppliers and demanding buyers but not on our platform.
 We have devised a solution to rid our sellers of all the traditional complications related to selling online. Our system has removed all of the pain points related to online selling and has streamlined the process so that anyone with any notion whatsoever can profit from selling nothing on our platform.
 This means you open a store in our marketplace, the items you are selling are virtual so the platform provides them and therefore there is nothing to ship or keep track of.</p>
-<p>If you wish to open a store on the site so you can start selling Beta and Charlie transactions you need to go to your profile page and consume the Alpha denominations you want to trade in.</p>
+
+<h3>Fee's associated with operating an online store here</h3>
+
+<p>If you wish to open a store on the site so you can start selling Beta and Charlie transactions you need to go to your "Store" page and consume the Alpha denominations you want to trade in.</p>
 <p>Currently, you have the option to consume Alpha’s in the following denominations:
 $1, $5, $10, $20, $50 and $100.</p>
 <p>These denominations represent the USA paper currencies all the way up to a $100 dollar bill which is the default currency being used on the site.</p>
-<p>Currently we use Stripe as our payment partner so whatever their daily conversion rate is on the day will be reflected in your transaction.
-When you consume an Alpha the system will spawn a Beta and an Charlie in the same denomination which will become your initial inventory items. For example; if you consume a $5 Alpha your store will acquire a $5 Beta and a $5 Charlie which you can sell to others. Once you have sold these two items you will have doubled your money less the fee’s Stripe charges for the transaction. The site does not tack on any additional fee’s to a transaction other than the fee Stripe is charging to manage the transaction and of course convert the currency if you’re paying with a currency other than USD.</p>
 
 <h3>So how does this build wealth?</h3>
+
 <p>Simple, you invest in inventory by consuming another users Beta or Charlie transaction. This spawns a Beta and a Charlie for you and places it in your inventory. The system automatically queues your inventory items and places them in the marketplace for others to consume. The system works on a first come basis so your items will be on the bottom of the list of items at first but as others get consumed yours move up the list and eventually get consumed earning you income.</p>
 <p>If you do not want to wait for your items to move up in the queue then copy and paste the url to them in your social media circles to advertise them. This is a good way to introduce friends and family to the network so they can start earning passive income as well.</p>
 <p> The system runs in perpetuity. The only thing that can prevent the system from building wealth for its members is if the members themself stop spawning Beta and Charlie transactions. Given the fact you double your money each time you consume a Beta and/or a Charlie we are assuming the system will never stop running and will eventually spawn many millions of dollars for its members.</p>
 
 <h3>Fees</h3>
 <p>The site charges a fee to initiate Alpha's you use to spawn your Beta and Charlie transactions. The fee is the cost associated with the Alpha you are trying to initiate. This is a one time fee per Alpha denomination per member. The fee's we collect through initiating your Alpha's will be used in part to maintain the integrity of the site as well as support the creators and any 3rd party partners necessary to keep the society viable.</p>
+<p>Once you initiate an Alpha and pay the initiation fee you will never have to pay to trade in that denomination again. There are also no commission or site related fee's to consume Beta and Charlie transactions. This is unlike any other online marketplace all of whom charge a commision or percent of sale for you to conduct business on their platform. Some even charge a subscription or monthly fee along with their transaction fees. We don't! we charge a one time fee per Alpha type and then allow you to make as many transaction as you wish on the site in that denomination. If you want to consume different transaction types then initiate the Alpha in all denominations.</p>
+
+<h3>3rd Party Fees</h3>
+
+<p>Currently we use Stripe as our payment partner so whatever their daily conversion rate is on the day will be reflected in your transaction.
+When you consume an Alpha the system will spawn a Beta and an Charlie in the same denomination which will become your initial inventory items. For example; if you consume a $5 Alpha your store will acquire a $5 Beta and a $5 Charlie which you can sell to others. Once you have sold these two items you will have doubled your money less the fee’s Stripe charges for the transaction. The site does not tack on any additional fee’s to a transaction other than the fee Stripe is charging to manage the transaction and of course convert the currency if you’re paying with a currency other than USD.</p>
+
 <br>
 
 <a href="{% url 'profile'  %}"><button class="btn btn-primary">Initialize Alpha's</button></a>     <a href="{% url 'products'  %}"><button class="btn btn-primary">Consume Transactions</button></a>
