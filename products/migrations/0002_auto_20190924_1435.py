@@ -9,6 +9,7 @@ from django.db import migrations, models
 import django.db.models.deletion
 from django.utils.timezone import utc
 
+
 class Migration(migrations.Migration):
     dependencies = [
      migrations.swappable_dependency(settings.AUTH_USER_MODEL),
