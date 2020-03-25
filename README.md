@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Jmcclain0129/ecommerce.svg?branch=master)](https://travis-ci.org/Jmcclain0129/ecommerce)
+ Status](https://travis-ci.org/Jmcclain0129/ecommerce.svg?branch=master)](https://travis-ci.org/Jmcclain0129/ecommerce)
 
 # The Alpha Beta Charlie Society
 
@@ -67,12 +67,17 @@ Repository on
 
 ## License
 
-The project is shared for use with the [GNU General Public License v3](https://github.com/Pattern-Projects/oireachtas-ifd-project/blob/master/LICENSE)
+This project is not open source there fore the use or distribution of the software contained within it is explicitedly forbidden without written consent from the copyright holder.
 
->   This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+If a repository has no license, then all rights are reserved and it is not Open Source or Free. You cannot modify or redistribute this code without explicit permission from the copyright holder.
+
+From GitHub's licensing help page:
+
+"You're under no obligation to choose a license. However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you're creating an open source project, we strongly encourage you to include an open source license. The Open Source Guide provides additional guidance on choosing the correct license for your project.
+
+Note: If you publish your source code in a public repository on GitHub, according to the Terms of Service, other GitHub users have the right to view and fork your repository within the GitHub site. If you have already created a public repository and no longer want users to have access to it, you can make your repository private. When you convert a public repository to a private repository, existing forks or local copies created by other users will still exist."
+
+In short, the only thing you can safely assume is that you have no rights to do anything at all with this code. In the particular case of GitHub, you can fork the repository and view the code, but nothing more.
     
 ## UX
 
@@ -158,7 +163,7 @@ Features planned, implemented and outlined for later development
 - 
 ### Existing Features
 - Documentation - ReadMe File, Licence & Mockups
-- Flask Python focused development
+- Django Python focused development
 - Data input from forms
 - Page refreshes
 - Dynamic content switching by house
@@ -194,8 +199,9 @@ Features planned, implemented and outlined for later development
 - Custom Logo
 - Favicon
 - Search
-  - by keyword
+  - by item type
   - by Alpha, Beta, Charlie
+  - by Offered by
 
 ## Technologies Used
 
@@ -244,34 +250,24 @@ Tests concluded site is fully responsive in mobile displays
 
 To deploy your own version of the website:
 - Have git installed
-- Visit the [repository]([GitHub](https://github.com/Jmcclain0129/decoder_cookbook))
+- Visit the [repository]([GitHub](https://github.com/Jmcclain0129/AlphaBetaCharlie))
 - Click 'Clone or download' and copy the code for http
 - Open your chosen IDE (Cloud9, VS Code, etc.)
 - Open a terminal in your root directory
 - Type 'git clone ' followed by the code taken from github repository
-    - ```git clone https://github.com/Pattern-Projects/oireachtas-ifd-project.git```
+    - ```git clone https://github.com/Jmcclain0129/AlphaBetaCharlie
 - When this completes you have your own version of the website
-    - Feel free to make any changes to it
-- The website can be run by opening one of the HTML files within a web browser
-- Visit the link provided
-- Your website with any made changes will appear
-- Saved changes to the website will appear here after refreshing the page
-
-The benefits of hosting your website on GitHub pages is that any pushed changes to your project will automatically update the website. Development branches can be created and merged to the master when complete.
-
-It may take a moment for changes to appear on the hosted website.
-
-During development the site is written in PyCharm. It is run using Live
-Server plugin for PyCharm.
 
 ## Known Bugs
 
-- CSS denied via AWS after installing gitpod in github. No time to debug
-- Search not working
-- Alpha, Beta nor Charlie are spawning themselves yet
-
+- The site operates as intended
 
 ## Credits
+
+to all who provided input via
+django-users@googlegroups.com
+https://github.community
+https//stackoverflow.com
 
 ### Content
 The text on the website has been written by the web designer:
@@ -283,3 +279,5 @@ Thank you to the following for inspiration, motivation and the direction I neede
 - Simen Daehlin     @Eventyret_mentor
 - Michael Park      @michael_ci
 - Niel McEwen       @niel_ci
+- Naman Gupta       Mentor, coder and friend who provided bug work-a-rounds
+- Goran Nikic       Mentor, coder and friend who provided more than one swift kick in the butt as well as a boat load of coffee (usually around 3am)
