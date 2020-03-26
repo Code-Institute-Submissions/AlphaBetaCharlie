@@ -99,9 +99,9 @@ In short, the only thing you can safely assume is that you have no rights to do 
     
 ## UX
 
-![Responsive Views of Index Page](/media/images/mobile_index.PNG)
+![Mobile index page](/media/mobile_index.PNG)
 
-![Responsive Views of inner page](media/images/mobile_inner_page.PNG)
+![Mobile inner page](/media/mobile_inner_page.png)
 
 ### Users 
 The site is open to any and all users from all walks of life. It is anticipated that the site would be most attractive to students age 14 to 24 years as they would most likely be the demographic looking for passive income to support their lifestyles.
