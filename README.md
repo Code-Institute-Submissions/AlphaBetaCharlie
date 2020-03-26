@@ -99,9 +99,11 @@ In short, the only thing you can safely assume is that you have no rights to do 
     
 ## UX
 
-![Mobile index page](/media/mobile-index.png)
+![Mobile index page](/images/alpha-image.png)
+Format: ![Alt Text](https://alpha-beta-charlie.herokuapp.com)
 
 ![Mobile inner page](/media/mobile-inner-page.png)
+Format: ![Alt Text](https://alpha-beta-charlie.herokuapp.com)
 
 ### Users 
 The site is open to any and all users from all walks of life. It is anticipated that the site would be most attractive to students age 14 to 24 years as they would most likely be the demographic looking for passive income to support their lifestyles.
@@ -248,7 +250,7 @@ This project makes use of:
 - [Heroku](https://decoder-cookbook.herokuapp.com/get_index) Website
   hosted on **Heroku**
 - [Django](https://www.djangoproject.com/)
-  -   version 1.11.15
+  -   version 1.11.15 updated to 2.2.5
 - [Am I Responsive](http://ami.responsivedesign.is)
     - Testing responsiveness of the website
 
