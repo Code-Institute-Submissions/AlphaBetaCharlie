@@ -85,7 +85,7 @@ The Repository is located at:
 
 ## License
 
-This project is not open source there fore the use or distribution of the software contained within it is explicitedly forbidden without written consent from the copyright holder.
+This project is not open source therefore the use or distribution of the software contained within it is explicitedly forbidden without written consent from the copyright holder.
 
 If a repository has no license, then all rights are reserved and it is not Open Source or Free. You cannot modify or redistribute this code without explicit permission from the copyright holder.
 
