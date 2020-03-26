@@ -1,19 +1,66 @@
  Status](https://travis-ci.org/Jmcclain0129/ecommerce.svg?branch=master)](https://travis-ci.org/Jmcclain0129/ecommerce)
 
-# The Alpha Beta Charlie Society
+# Welcome To The Alpha Beta Charlie eCommerce Platform
 
-## Introduction
+## An Introduction
 
-Alpha Beta Charlie is the worlds first eCommerce solution dedicated to selling absolutely nothing. To accomplish this the site uses its cart system to generate new inventory for sellers once they successfully complete a transaction as a buyer through the checkout process.
+Alpha Beta Charlie is the worlds first eCommerce solution dedicated to selling absolutely nothing.
 
-The site owner has petitioned for a provisionary patent to protect the unique process described above. As mentioned this site is the first site in the world dedicated to selling nothing, but it is also the first eCommerce solution to increase inventory instead of deplete inventory when a transaction successfully completes its processing. This is the basis of the patent filing.
+Users of this site buy and sell virtual items known as Beta and Charlie Transactions. These are not physical items nor are they available for digital download.
 
-Once the buyer successfully completes a transaction on the site the buyer becomes a seller on the site. This too is a unique charateristic not found on any other eCommerce site in the world and is another basis for seeking patent to protect the process used to alter the role of the user. 
+Once a buyer successfully completes the purchase of a Beta or Charlie Transaction the owenrship of the originally purchased Beta or Charlie Transaction is voided and that original Transaction is archived. Two new Transactions replace the original Transaction with ownership of these Transactions belonging to the buyer of the original Transaction that is now deprecated.
 
+To accomplish this the site uses its cart system to generate new inventory for sellers once they successfully complete a transaction as a buyer through the checkout process.
+
+Once the buyer successfully completes a transaction purchase on the site that buyer becomes the seller.
+
+## Roles
+
+The Buyer 
+The Seller
+The Supplier
+
+In this system the buyer is the seller and the seller is the buyer. Both must consume items to spawn inventory they can turn-a-round and sell.
+
+The system supplies all the inventory to the buyers and the sellers which means the system is the Supplier. There is no mechanism to populate a store in this system with items other than the process of store owners consuming other store owners items. Each time a store owner consumes an item two new items are generated and placed in that store owners inventory and put up for sale automatically through the marketplace.
+
+## Transaction types
+
+This system has three items affectionately known as Alpha, Beta and Charlie Transactions. These items are available in various sizes with a specific value assigned to each one. Currently the items values are based on the various paper money denominations of the USD Fiat currency otherwise known as the US dollar. 
+
+$1
+$5
+$10
+$20
+$50
+$100
+
+These three transaction types are the only commodities for sale on this platform. They exist in name only because they are not tangible items, they are virtual items or Fiat transactions.
+
+Revenue is earned by trading in these commodities through the site.
+
+Alpha transactions are used to generate income for the site owner.
+Beta and Charlie transactions are used to generate revenue for sellers.
+
+## Inventory Procurement and Managment
+
+As with any other online marketplace its sellers must have inventory to offer for sale to the buyers. This marketplace is no different. What makes this platform unique is the method with which inventory is acquired and managed.
+
+Inventory management is automated by the system. The sellers inventory is depleted as it is consumed by others which increases the inventory of those who are consuming it. To increase inventory sellers must consume items. To decrease inventory sellers simply stop consuming items.
+
+For users to acquire their first inventory items they must consume Alpha Transactions. This process is known as initiating their Alpha.
+
+Once an Alpha is initiated the user can buy and sell Beta and Charlie transaction of equal value from the marketplace. For example, if a user wishes to sell $5 Beta or $5 Charlie transactions they must first initiate their $5 Alpha. This action spawns their first $5 Beta and $5 Charlie transactions which are placed in the martplace for sale on thier behalf.
+
+When a transaction is consumed the system spawns two new inventory items for the user that spawned them. Before a user can consume any transactions they must initiate the Alpha transaction equal to the value of the transaction they wish to consume.
+
+To acquire more inventory a user must consume Beta and Charlie transactions
+
+The system uses foreign keys to keep track of transactions.
 
 ## Selling Items and Tracking Transactions
 
-Users of this site buy and sell virtual items known as Beta and Charlie. Beta and Charlie are the only items for sell on the site. To get these items a seller must consume another sellers Beta or Charlie item. Once they do and successfully complete the checkout process the consumed Beta or Charlie transaction item is archived and a new Beta and Charlie transaction is spawned. These new items are associated with the buyers account and when they are consumed by another user the account they are associated with is credited with the value of the transaction.
+To get these items a seller must consume another sellers Beta or Charlie item. Once they do and successfully complete the checkout process the consumed Beta or Charlie transaction item is archived and a new Beta and Charlie transaction is spawned. These new items are associated with the buyers account and when they are consumed by another user the account they are associated with is credited with the value of the transaction.
 
 This site generates new inventory items for its users each time an item is purchased by another user. This process is known as consuming items and is necessary for the sellers to stock their store with items to sell.
 
