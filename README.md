@@ -206,20 +206,22 @@ Features planned, implemented and outlined for later development
 - GitHub - Remote Repository
 - Deployed - Hosted on Heroku Pages
 - Cloud Database - aws amazon s3 buckets
-- 
+
 ### Features Left to Implement
-- Dynamic content switching by house
-  -   Course
-  -   Modules
-  -   Units
-- Pagination
-- Breadcrumbs
-- Custom Logo
-- Favicon
+- Cart
+- Checkout
 - Search
   - by item type
   - by Alpha, Beta, Charlie
   - by Offered by
+### Features Left to Implement
+- Email auth registration process
+- Google reCaptcha spam protection
+- Emoji preferences (https://www.javascripting.com/view/emojify-js)
+- Pagination
+- Breadcrumbs
+- Custom Logo
+- Favicon
 
 ## Technologies Used
 
