@@ -4,60 +4,20 @@
 
 ## Introduction
 
-This Society is a community of individuals seeking financial freedom. To achieve their goal they must work together
-culminating friends in the societies gaming platform. 
+Alpha Beta Charlie is the worlds first eCommerce solution dedicated to selling absolutely nothing. To accomplish this the site uses its cart system to generate new inventory for sellers once they successfully complete a transaction as a buyer through the checkout process.
 
-The platform is not a traditional gaming platform at all. In fact, the platform is a simple ecommerce marketplace where
-the buyer becomes the seller and the seller becomes the buyer.
+The site owner has petitioned for a provisionary patent to protect the unique process described above. As mentioned this site is the first site in the world dedicated to selling nothing, but it is also the first eCommerce solution to increase inventory instead of deplete inventory when a transaction successfully completes its processing. This is the basis of the patent filing.
 
-To make matters more confusing, the platform sells absolutely nothing. The site consists of two items known simply as
-Beta and Charlie. Beta and Charlie are friendly bots who spend their virtual days looking for more friends. This is
-where the gamification of the ecommerce platform comes to light.
+Once the buyer successfully completes a transaction on the site the buyer becomes a seller on the site. This too is a unique charateristic not found on any other eCommerce site in the world and is another basis for seeking patent to protect the process used to alter the role of the user. 
 
-The idea was born on the notion that you could not create an ecommerce platform that sold nothing. The sites creator is
-a student of Code Institute and the project itself was born out of necessity because the coursework required students to
-develop an ecommerce solution as the last in a series of milestone projects. While contemplating ideas for the site the
-creator wanted to try something new. Something that was way outside of the box and this is when it dawned on him that
-there was no real need to actually use the platform to sell items and/or services. There was nothing in the directive that
-specified you had to so the concept quickly started to focus on the possibility of creating a platform that sells
-absolutely nothing while at the same time has the potential to earn a substantial amount of wealth for those that engaged
-with it.
 
-Once the idea was envisioned the name came immediately. The creator was already fixated on a site name that contained the
-word alpha because alpha often represents the first of something and often the best of something. This project was going
-to be the creators first, or alpha django project so it made sense to him to want to intern the word alpha into the project
-name. Beta was introduced because the project is a beta that will be used as an mvp. Charlie naturally followed because
-of the urban alphabet known to the author as alpha beta charlie. Alpha Beta Charlie is a phonetic alphabet used to
-spell words over radio transmissions. Alpha for the letter A, Beta for the letter B, Charlie for the letter C and so on.
-There is an actual alphabet with a dictionary known as the Nato Phonetic Dictionary which defines the code word and
-pronunciation for each of the 26 letters of the english ALPHAbet, non pun intended, lol.
+## Selling Items and Tracking Transactions
 
-You can view that dictionary here: http://www.alphabravocharlie.info/alphabet.php
-Further credit's associated to the origin information related to the NATO dictionary is available on the reference site
-listed above.
+Users of this site buy and sell virtual items known as Beta and Charlie. Beta and Charlie are the only items for sell on the site. To get these items a seller must consume another sellers Beta or Charlie item. Once they do and successfully complete the checkout process the consumed Beta or Charlie transaction item is archived and a new Beta and Charlie transaction is spawned. These new items are associated with the buyers account and when they are consumed by another user the account they are associated with is credited with the value of the transaction.
 
-The idea to create a society built around generating something from nothing through an ecommerce gaming platform wasn't
-as easy to imagine as the naming of the project. Originally the concept was to sell Alpha's on the site which would
-spawn Beta and Charlie transactions the users could turn-a-round and sell for a profit. But when designing the workflow
-for that concept it seemed a bit illogical considering the site was not supposed to be selling anything in the first place.
+This site generates new inventory items for its users each time an item is purchased by another user. This process is known as consuming items and is necessary for the sellers to stock their store with items to sell.
 
-To solve the issue it was determined that the Alpha transaction could be used to allow the user
-to donate a small fee to the society in exchange for a Beta and Charlie set which they could use to find new friends
-willing to donate to their cause. This way, the site is not selling anything. There is also another added benefit in that
-Alpha is not used to generate Beta and Charlie even though the site cannot spawn a Beta or Charlie unless the user trying
-to do the spawning is an Alpha.
-
-## Tracking Transactions
-
-Technically, the user becomes an Alpha once they inaugurate their lifetime membership. Alpha is simply a transaction related
-to the form used to accept a donation to the society. Since every member is an Alpha the system will concatenate their username
-with the term Alpha so that the system can identify each Alpha user uniquely. The system will concatenate the alpha_username
-with each Beta Charlie the Alpha_username is associated with so that each Beta and Charlie assume a unique username as well
-such as alpha_username+beta_username+transaction_id# In technical terms this means the system will use foreign keys or
-composite keys to track users and their transactions.
-
-To learn more about the Alpha Beta Charlie Society visit the website here:
-https://jmc-django-ecommerce.herokuapp.com/accounts/home/
+The site uses foreign keys to track transactions. Items are dynamically placed in view with each user session. Inventory is generated by consuming other users transactions. The site auto generates a 
 
 
 Hosted on 
@@ -244,7 +204,7 @@ This project makes use of:
 Alternatively:
 
 1. Visit the hosted version of the
-   [website](https://jmc-django-ecommerce.herokuapp.com/)
+   [website](https://alpha-beta-charlie.herokuapp.com/)
 
 Tests concluded site is fully responsive in mobile displays
 
