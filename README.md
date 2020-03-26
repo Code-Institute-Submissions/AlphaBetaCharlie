@@ -136,15 +136,15 @@ Website Logo - Text Based
 ### Mockups
 The web app is a multi page with different displays given for different
 functions:
-- [Admins - add/edit/delete - admin](https://jmc-django-ecommerce.herokuapp.com/admin/)
-- [Admins - add/edit/delete - orders](https://jmc-django-ecommerce.herokuapp.com/admin/checkout/order/)
-- [Admins - add/edit/delete - users](https://jmc-django-ecommerce.herokuapp.com/admin/auth/user/)
-- [Admins - add/edit/delete - products](https://jmc-django-ecommerce.herokuapp.com/admin/products/product/)
-- [Members View Index](https://jmc-django-ecommerce.herokuapp.com)
-- [Members View Society Page](https://jmc-django-ecommerce.herokuapp.com/accounts/home/)
-- [Members View Registration](https://jmc-django-ecommerce.herokuapp.com/accounts/register/)
-- [Members View Checkout](https://jmc-django-ecommerce.herokuapp.com/accounts/checkout/)
-- [Members View Cart](https://jmc-django-ecommerce.herokuapp.com/cart/)
+- [Admins - add/edit/delete - admin](https://alpha-beta-charlie.herokuapp.com/admin/)
+- [Admins - add/edit/delete - orders](https://alpha-beta-charlie.herokuapp.com/admin/checkout/order/)
+- [Admins - add/edit/delete - users](https://alpha-beta-charlie.herokuapp.com/admin/auth/user/)
+- [Admins - add/edit/delete - products](https://alpha-beta-charlie.herokuapp.com/admin/products/product/)
+- [Members View Index](https://alpha-beta-charlie.herokuapp.com)
+- [Members View Society Page](https://alpha-beta-charlie.herokuapp.com/accounts/home/)
+- [Members View Registration](https://alpha-beta-charlie.herokuapp.com/accounts/register/)
+- [Members View Checkout](https://alpha-beta-charlie.herokuapp.com/accounts/checkout/)
+- [Members View Cart](https://alpha-beta-charlie.herokuapp.com/cart/)
 
 ### Balsamiq Mockups
 - https://www.evernote.com/l/APAwU_6IjmRNZqlfNAflYVVwiREnz19uhpE/
