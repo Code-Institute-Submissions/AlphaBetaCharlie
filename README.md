@@ -301,5 +301,5 @@ Thank you to the following for inspiration, motivation and the direction I neede
 - Simen Daehlin     @Eventyret_mentor
 - Michael Park      @michael_ci
 - Niel McEwen       @niel_ci
-- Naman Gupta       Mentor, coder and friend who provided bug work-a-rounds
-- Goran Nikic       Mentor, coder and friend who provided more than one swift kick in the butt as well as a boat load of coffee (usually around 3am)
+- Naman Gupta       Non code institute mentor, coder and friend who provided bug work-a-rounds and help with the logic related to the foreign keys used to track transactions in the application. He helped with logic related to the summaries of transactions which visible on user profile pages as well as in the profile alpha items. Tracks the number of beta and alpha transactions spawned and coonsumed by denomination.
+- Goran Nikic       non code institute mentor, my former employer who is a unicorn coder and friend. He provided more than one swift kick in the butt as well as a boat load of coffee (usually around 3am)
