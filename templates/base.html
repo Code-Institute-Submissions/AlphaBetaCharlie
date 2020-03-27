@@ -34,7 +34,7 @@
                         <li><a href="{% url 'home' %}"><i class="fa fa-user"></i>About</a></li>
                         <li><a href="{% url 'how_to' %}"><i class="fa fa-user"></i>How To</a></li>
                         <li><a href="{% url 'products' %}"><i class="fa fa-user"></i>Marketplace</a></li>
-                        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>Store</a></li>
+                        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a></li>
                         <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Log Out</a></li>
                     {%  else %}
                         <li><a href="{% url 'home' %}"><i class="fa fa-user"></i>Home</a></li>
@@ -66,7 +66,7 @@
     {% endif %}
     {% if transaction_summary %}
      <div class="container">
-            <p>Transaction Summary: Invested: ${{transaction_invested}} > Earned: ${{transaction_earned}} > Outstanding: ${{transaction_outstanding}}</p>
+            <p>Transaction Summary: Consumed: ${{transaction_invested}} > Spawned: ${{transaction_earned}} > Spawning: ${{transaction_outstanding}}</p>
         </div>
         
     {% endif %}

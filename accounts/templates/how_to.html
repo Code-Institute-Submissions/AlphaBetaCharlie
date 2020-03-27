@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap_tags %}
+{% block content %}
+
+</section>
+
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+      <h1>FAQ's</h1>
+      <p class="lead">What is Fundgrazing.com all about?</p>
+      <ul class="a">
+          <li><p>We're an online marketplace where people like you can mint your own money.</p></li>
+          <li><p>Use our system to make money selling nothing at all. Our system is unique because it automatically generates product for you to sell. You do not have to worry about what goods you have to sell or even how or who to sell them too. Just consume items from the marketplace and more items will appear there in your name. We've eliminated all of the usual hassles of owning and operating an online store by reducing the sales process down to a single transaction.</p></li>
+          <li><p>The site is designed to focus on doubling your money each time you consume another users items.</p></li>
+      </ul>
+      <p class="lead">Who or what is Alpha?</p>
+      <ul class="a">
+          <li><p>Alpha is your supplier. Before you can consume inventory items in our network you need to initiate your Alpha. There is an Alpha for each type of inventory item.</p></li>
+      </ul>
+      <p class="lead">Who or what is Beta?</p>
+      <ul class="a">
+          <li><p>Beta is an inventory item.</p></li>
+      </ul>
+      <p class="lead">Who or what is Charlie?</p>
+      <ul class="a">
+          <li><p>Charlie is an inventory item</p></li>
+      </ul>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <h1>How it works</h1>
+      <p class="lead">We reduced the process of online selling down to its simplest form.</p>
+      <p>You make money by selling transactions. To accumulate transactions you simply consume other sellers transactions. Each time you consume someone elses transaction the system spawns two new transaction for you to sale. The more you consume the more you make. It's that easy!</p>
+    </div>
+  </section>
+  </section>
+    <section class="py-5">
+      <div class="container">
+        <h1>Register right now and start making money</h1>
+        <p></p>
+        <p>You make money by selling transactions. To accumulate transactions you simply consume other sellers transactions. Each time you consume someone elses transaction the system spawns two new transaction for you to sale. The more you consume the more you make. It's that easy!</p>
+        <a href="{% url 'home'  %}"><button type="submit" class="btn btn-primary">Initiate Alpha</button>
+      
+          <h1>No Inventory</h1>
+          <h1>No Shipping</h1>
+          <h1>No Returns</h1>
+          <h1>No Hassles</h1>
+      
+        </div>
+    </section>
+
+{% endblock %}
